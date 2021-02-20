@@ -5,15 +5,20 @@
 
     <description><![CDATA[A handy plugin for AS to browse git tags history]]></description>
 
-    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-         on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
     </extensions>
 
     <actions>
-        <!-- Add your actions here -->
+        <group id="BrowseTagsPlugin.TopMenu"
+               text="_Git Extensions"
+               description="BrowseTagsPlugin toolbar menu">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="BrowseTags"
+                    class="ShowTagsHistoryAction"
+                    text="_Show Tags History"
+                    description="Popup with tags history"/>
+        </group>
     </actions>
 </idea-plugin>
