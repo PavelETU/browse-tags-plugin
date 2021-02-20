@@ -14,12 +14,6 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
 }
 
-// See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '2020.3.2'
-}
-patchPluginXml {
-    changeNotes """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""
+    version '201.8743.12'
 }
