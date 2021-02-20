@@ -17,7 +17,7 @@
             <add-to-group group-id="MainMenu" anchor="last"/>
             <action id="BrowseTags"
                     class="ShowTagsHistoryAction"
-                    text="_Show Tags History"
+                    text="_Show History Of Tags"
                     description="Popup with tags history"/>
         </group>
     </actions>
