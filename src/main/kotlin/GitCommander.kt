@@ -20,4 +20,13 @@ class GitCommander(private val project: Project?) {
         generalCommandLine.workDirectory = File(project?.basePath ?: project.toString())
         return ScriptRunnerUtil.getProcessOutput(generalCommandLine)
     }
+
+    fun getFileForTag(absolutePath: String, tag: String): String {
+        val localPath = absolutePath.removePrefix("${project?.basePath}/")
+        val commands = listOf("git", "show", "tags/$tag:$localPath")
+        val generalCommandLine = GeneralCommandLine(commands)
+        generalCommandLine.charset = Charset.forName("UTF-8")
+        generalCommandLine.workDirectory = File(project?.basePath ?: project.toString())
+        return ScriptRunnerUtil.getProcessOutput(generalCommandLine)
+    }
 }
