@@ -17,5 +17,5 @@ To install:
 
 <br><br>
   
-<img src="browse_tags_history_plugin.gif">
+<img src="browse_tags_plugin.gif">
 
