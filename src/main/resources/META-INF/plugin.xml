@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.wordpress.ltb.browse-tags-plugin</id>
     <name>Browse Git Tags History</name>
-    <vendor email="pavelsuvit@gmail.com" url="https://github.com/PavelETU/browse-tags-plugin">Pavel Suvit</vendor>
+    <vendor email="pavelsuvit@gmail.com" url="https://github.com/PavelETU">Pavel Suvit</vendor>
 
     <description><![CDATA[A handy plugin for AS to browse git tags history]]></description>
 
