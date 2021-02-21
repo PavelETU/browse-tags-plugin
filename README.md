@@ -8,7 +8,7 @@ This is the plugin to the rescue  :tada:
 Features:
 - View all your tags in a list
 - View the info about your tag (date/message if present)
-- View a context of any file in your project as it looks like based on tag
+- View a context of your Release Notes/What's New/ChangeLog file as it is in the tag
 <br><br>
   
 To install:
