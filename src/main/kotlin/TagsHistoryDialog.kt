@@ -21,6 +21,7 @@ class TagsHistoryDialog(private val gitCommander: GitCommander, private val proj
     private var tag: String? = null
     private var filePath: String? = null
     private var fileName: String? = null
+    private var noTags: Boolean = false
 
     override fun createCenterPanel(): JComponent {
         val panel = JPanel(BorderLayout())
@@ -30,8 +31,13 @@ class TagsHistoryDialog(private val gitCommander: GitCommander, private val proj
         list.layoutOrientation = JList.VERTICAL
         val scrollForList = JBScrollPane(list)
         panel.add(scrollForList, BorderLayout.LINE_START)
-        outputText =
-                JBTextArea("The context of a tag will be displayed here\n\nTo choose a tag select one of the versions")
+        noTags = listOfTags.isEmpty()
+        val textToDisplay = if (noTags) {
+            "You don't have any tags to look a history for"
+        } else {
+            "The context of a tag will be displayed here\n\nTo choose a tag select one of the versions"
+        }
+        outputText = JBTextArea(textToDisplay)
         outputText.isEditable = false
         val scrollPaneForText = JBScrollPane(outputText, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS)
         scrollPaneForText.preferredSize = Dimension(500, 250)
