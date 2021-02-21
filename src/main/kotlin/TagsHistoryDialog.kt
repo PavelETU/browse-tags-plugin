@@ -51,16 +51,25 @@ class TagsHistoryDialog(private val gitCommander: GitCommander, private val proj
         return panel
     }
 
-    override fun createActions(): Array<Action> = arrayOf(object : DialogWrapperAction("Select File To Display") {
-        override fun doAction(e: ActionEvent?) {
-            FileChooser.chooseFile(FileChooserDescriptorFactory.createSingleFileDescriptor(), project, project!!.baseDir)
-            { t -> filePath = t.path; fileName = t.name; buildOutputText() }
+    override fun createActions(): Array<Action> {
+        val closeAction = object : DialogWrapperAction("Close") {
+            override fun doAction(e: ActionEvent?) {
+                doOKAction()
+            }
         }
-    }, object : DialogWrapperAction("Close") {
-        override fun doAction(e: ActionEvent?) {
-            doOKAction()
+        val selectFileAction = object : DialogWrapperAction("Select File To Display") {
+            override fun doAction(e: ActionEvent?) {
+                if (noTags) return
+                FileChooser.chooseFile(FileChooserDescriptorFactory.createSingleFileDescriptor(), project, project!!.baseDir)
+                { t -> filePath = t.path; fileName = t.name; buildOutputText() }
+            }
         }
-    })
+        return if (!noTags) {
+            arrayOf(selectFileAction, closeAction)
+        } else {
+            arrayOf(closeAction)
+        }
+    }
 
     private fun buildOutputText() {
         if (tag == null) buildGeneralOutputText()
