@@ -9,5 +9,13 @@ Features:
 - View all your tags in a list
 - View the info about your tag (date/message if present)
 - View a context of any file in your project as it looks like based on tag
-<br><br><img src="browse_tags_history_plugin.gif">
+<br><br>
+  
+To install:
+- Download jar file [a relative link](build/libs/browse-tags-plugin-1.0.jar)
+- Open the file from "Plugins" -> "Install Plugin From Disk"
+
+<br><br>
+  
+<img src="browse_tags_history_plugin.gif">
 
