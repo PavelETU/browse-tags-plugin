@@ -15,5 +15,6 @@ dependencies {
 }
 
 intellij {
-    version '201.8743.12'
+    version '183.6156.11'
+    updateSinceUntilBuild = false
 }
