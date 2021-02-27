@@ -15,9 +15,9 @@ Usage instructions:
 <ol>
 <li>Have some git tags in your project</li>
 <li>Open "VCS Operations Popup..."</li>
-<img src="media/vcs_menu.png" width="250">
+<img src="media/vcs_menu.png" width="300">
 <li>Click on "Show History Of Tags"</li>
-<img src="media/vcs_popup.png" width="250">
+<img src="media/vcs_popup.png" width="300">
 <li>Choose your Release Notes/What's new file (optional)</li>
 <li>Choose a tag from the list on the left</li>
 <li>See a Date, a message (if defined) and the context of a Release Notes/What's new file (optional) as it is for this tag</li>
