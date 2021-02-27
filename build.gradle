@@ -16,5 +16,10 @@ dependencies {
 
 intellij {
     version '183.6156.11'
-    updateSinceUntilBuild = false
+    updateSinceUntilBuild = true
+}
+
+patchPluginXml {
+    sinceBuild '183.6156.11'
+    untilBuild '203.7148.57'
 }
