@@ -3,7 +3,17 @@
     <name>Browse Git Tags History</name>
     <vendor email="pavelsuvit@gmail.com" url="https://github.com/PavelETU">Pavel Suvit</vendor>
 
-    <description><![CDATA[A handy plugin for AS to browse git tags history]]></description>
+    <description><![CDATA[<b>Do you manage your releases using Git tags?<br>
+    Do you keep some sort of Release Notes/What's new file in your project?<br><br>Then this is the plugin for you!</b><br><br>
+    Usage instructions:
+    <ol>
+    <li>Have some git tags in your project</li>
+    <li>Open "VCS Operations Popup..."</li>
+    <li>Click on "Show History Of Tags"</li>
+    <li>Choose your Release Notes/What's new file (optional)</li>
+    <li>Choose a tag from the list on the left</li>
+    <li>See a Date, a message (if defined) and the context of a Release Notes/What's new file (optional) as it is for this tag</li>
+    </ol><br><a href="https://github.com/PavelETU/browse-tags-plugin">Source Code</a>]]></description>
 
     <depends>com.intellij.modules.platform</depends>
 
