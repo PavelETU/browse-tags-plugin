@@ -26,7 +26,7 @@ Usage instructions:
 To install:
 - Install from the Marketplace:
   - <kbd>Preferences</kbd> -> <kbd>Plugins</kbd> -> <kbd>Marketplace</kbd> -> <kbd>Make a search for "Browse Git Tags History"</kbd> -> <kbd>Enjoy</kbd>
-- Or download [jar file](build/libs/browse-tags-plugin-1.0.jar) and install it manually:
+- Or download [jar file](build/libs/browse-tags-plugin-1.1.jar) and install it manually:
   - <kbd>Preferences</kbd> -> <kbd>Plugins</kbd> -> <kbd>"Install Plugin from Disk..."</kbd> -> <kbd>Open the downloaded file</kbd> -> <kbd>Enjoy</kbd>
 
 <br><br>
