@@ -13,7 +13,7 @@ import javax.swing.*
 class TagsHistoryDialog(private val gitCommander: GitCommander, private val project: Project?) : DialogWrapper(true) {
     init {
         init()
-        setResizable(false)
+        isResizable = false
         title = "History of Tags"
     }
 

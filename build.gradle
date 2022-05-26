@@ -1,10 +1,10 @@
 plugins {
-    id 'org.jetbrains.intellij' version '0.7.2'
-    id 'org.jetbrains.kotlin.jvm' version '1.4.32'
+    id 'org.jetbrains.intellij' version '1.5.2'
+    id 'org.jetbrains.kotlin.jvm' version '1.6.21'
 }
 
 group 'com.wordpress.ltb'
-version '1.1'
+version '1.2'
 
 repositories {
     mavenCentral()
@@ -15,10 +15,10 @@ dependencies {
 }
 
 intellij {
-    version '2021.1'
+    version = '2022.1.1'
     updateSinceUntilBuild = true
 }
 patchPluginXml {
-    sinceBuild '183.6156.11'
-    untilBuild '211.7142.15'
+    sinceBuild = '183.6156.11'
+    untilBuild = '221.5787.3'
 }
