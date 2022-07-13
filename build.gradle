@@ -16,7 +16,6 @@ dependencies {
 
 intellij {
     version = '2022.1.3'
-    updateSinceUntilBuild = true
 }
 patchPluginXml {
     sinceBuild = '183.6156.11'
